@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+    <title>黑马页面</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="head">
+        <section class="top">黑马面面</section>
+        <section class="icons">
+            <a href="#" class="item"><img src="./icons/icon1.png" alt="">HR面试</a>
+            <a href="#" class="item"><img src="./icons/icon2.png" alt="">笔试</a>
+            <a href="#" class="item"><img src="./icons/icon3.png" alt="">技术面试</a>
+            <a href="#" class="item"><img src="./icons/icon4.png" alt="">模拟面试</a>
+            <a href="#" class="item"><img src="./icons/icon5.png" alt="">面试技巧</a>
+            <a href="#" class="item"><img src="./icons/icon6.png" alt="">薪资查询</a>
+        </section>
+        <section class="go">
+            <a href="#">
+                <img src="./images/go.png" alt="">
+            </a>
+        </section>
+    </header>
+    <!-- 就业指导部分 -->
+    <main class="main1">
+        <section class="top">
+            <h3><img src="./icons/i2.png" alt="">就业指导</h3>
+            <a href="#">更多&gt;&gt;</a>
+        </section>
+        <div class="swiper-container get-job-of">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src=".//images/pic.png" alt="">
+                    </a>
+                    <p>老师教你应对面试技巧</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src=".//images/pic.png" alt="">
+                    </a>
+                    <p>老师教你应对面试技巧</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src=".//images/pic.png" alt="">
+                    </a>
+                    <p>老师教你应对面试技巧</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </main>
+    <!-- 充电学习部分 -->
+    <main class="main1 study">
+        <section class="top">
+            <h3><img src="./icons/i1.png" alt="">充电学习</h3>
+            <a href="#">更多&gt;&gt;</a>
+        </section>
+          <!-- Swiper -->
+        <div class="swiper-container study-of">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说低调英语，告别中式英语</h5>
+                    <p>156人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pic2.png" alt="" />
+                    <h5>说低调英语，告别中式英语</h5>
+                    <p>156人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说低调英语，告别中式英语</h5>
+                    <p>156人学习</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部导航栏部分 -->
+    <footer class="foot">
+        <a href="#">
+            <i class="iconfont icon-home"></i>
+            <p>首页</p>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-duocengjiegou"></i>
+            <p>技术面试</p>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-xiepinglun"></i>
+            <p>模拟面试</p>
+        </a>
+        <a href="#">
+            <i class="iconfont icon-profile" style="font-weight: 600;"></i>
+            <p>我的主页</p>
+        </a>
+    </footer>
+
+    <script>
+        // 就业指导部分轮播
+        (function () {
+            var swiper = new Swiper('.get-job-of', {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+        // 充电学习部分轮播
+        (function () {
+            //  如果有多个轮播图最好修改下 swiper-container
+            var swiper = new Swiper(".study-of", {
+            // 我们可以可以看看到的是 2个半
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+            });
+        })();
+      </script>
+</body>
+</html>
